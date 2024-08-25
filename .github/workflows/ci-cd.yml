@@ -60,7 +60,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build the first api docker image
-      run: docker build -t api ./api
+      run: docker build -t mrnothing01/kube-docker-fastapi:latest ./api
       shell: bash
     
     - name: Docker Meta
@@ -78,7 +78,7 @@ jobs:
     - name: Push Docker Image
       uses: docker/metadata-action@v4
       with:
-        context: ./api
+        context: .
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
