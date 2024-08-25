@@ -1,6 +1,4 @@
-from typing import Union
-
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .config import settings
 
