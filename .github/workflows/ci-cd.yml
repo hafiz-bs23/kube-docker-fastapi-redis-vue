@@ -64,6 +64,6 @@ jobs:
       shell: bash
 
     - name: Run the first api docker image
-      run: docker run -d -p 8080:8080 first-api
+      run: docker run -d -p 8080:8080 api
       shell: bash
     
