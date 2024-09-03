@@ -11,4 +11,4 @@ RUN coverage run -m pytest
 
 RUN coverage report -m
 
-CMD ["python", "run", "main/main.py", "--port", "8080"]
+CMD ["fastapi", "run", "main/main.py", "--port", "8080"]
